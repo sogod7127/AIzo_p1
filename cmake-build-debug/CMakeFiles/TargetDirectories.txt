@@ -1,0 +1,4 @@
+C:/Users/Admin/CLionProjects/AIzo_p1/cmake-build-debug/CMakeFiles/AIzo_p1.dir
+C:/Users/Admin/CLionProjects/AIzo_p1/cmake-build-debug/CMakeFiles/AIzo_tests.dir
+C:/Users/Admin/CLionProjects/AIzo_p1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Admin/CLionProjects/AIzo_p1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

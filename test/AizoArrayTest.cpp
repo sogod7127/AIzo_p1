@@ -1,4 +1,6 @@
-﻿#include <iostream>
+﻿// Testy do budowania Arrayow
+
+#include <iostream>
 #include <cassert>
 #include <sstream>
 #include <functional>

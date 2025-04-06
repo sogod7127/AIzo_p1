@@ -1,7 +1,4 @@
-﻿//
-// Created by skwasnik on 03.04.2025.
-//
-
+﻿
 #ifndef INSERTIONSORT_H
 #define INSERTIONSORT_H
 

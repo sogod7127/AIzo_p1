@@ -13,6 +13,13 @@ add_executable(AIzo_p1 main.cpp
         Util/Sorting/InsertionSort.h
         Util/Sorting/HeapSort.tpp
         Util/Sorting/HeapSort.h
+        Util/Sorting/ShellSort.tpp
+        Util/Sorting/ShellSort.h
+        Util/File/FileUtill.cpp
+        Util/File/FileUtill.h
+        Util/AizoArrayBase.h
+        test/TestCLI.cpp
+        Util/CLI.cpp
 )
 
 # Test executable
@@ -29,4 +36,5 @@ add_executable(AIzo_tests
         Util/Sorting/InsertionSort.tpp
         Util/Sorting/InsertionSort.h
         test/SortingTest.cpp
+        test/TestCLI.cpp
 )

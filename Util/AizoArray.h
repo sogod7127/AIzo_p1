@@ -1,37 +1,47 @@
-﻿// AizoArray.h
+﻿//Własny vector
 
+#include "AizoArrayBase.h"
 #include <type_traits>
-
+#include "Sorting/QuickSort.h"
 
 #ifndef AIZO_ARRAY_H
 #define AIZO_ARRAY_H
 template <typename T>
-class AizoArray
+class AizoArray : public AizoArrayBase
 {
 private:
-    T* aizoArray;
+    T* aizoArray; //Miejsce robocze do sortowania
+    T* primaryAizo; // Array ktory mial pierwotna tablice
     size_t aizoArraySize;
     size_t reservedSize;
-    void reserve(size_t size);
+
 public:
     AizoArray();
-
     AizoArray(T arr[], size_t arr_size);
-
     template <size_t N>
     AizoArray(T (&arr)[N]);
-
     AizoArray(int dummy);
 
+    ~AizoArray()override {
+        delete[] aizoArray;
+    }
 
     void push_back(T value);
-    void quickSort();
+    void quickSort(char = 'R');
     void insertionSort();
     void heapSort();
-    void print();
+    void shellSort(char);
+    void print() override;
+    void printPrimary()override;
+    void reserve(size_t size) override;
+    void reshamble() override; // Restartuje tablice robocza do pierwotnej
 
-    size_t size() const;
+    bool isSorted() override;
+
+
+    size_t size() const override;
     T& operator[](size_t index);
+
     const T& operator[](size_t index) const;
 };
 

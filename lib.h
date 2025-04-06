@@ -1,6 +1,4 @@
-﻿//
-// Created by skwasnik on 16.03.2025.
-//
+﻿//TODO: ADD lib to all files
 
 #ifndef LIB_H
 #define LIB_H

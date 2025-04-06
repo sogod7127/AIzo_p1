@@ -1,4 +1,6 @@
-﻿#include <iostream>
+﻿//Glowny plik do uruchamiania prostych testow
+
+#include <iostream>
 #include <string>
 #include "AizoArrayTest.cpp"
 #include "SortingTest.cpp"  // Dodajemy nowy test

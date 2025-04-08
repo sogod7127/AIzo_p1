@@ -30,6 +30,7 @@ bool isTestingModeEnabled(const std::string& configFilePath) {
 }
 
 int main() {
+
     const std::string configFilePath = "../config.conf";
     if (isTestingModeEnabled(configFilePath)) {
         TestCLI test;

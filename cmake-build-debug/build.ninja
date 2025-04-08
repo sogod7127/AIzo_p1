@@ -73,6 +73,12 @@ build CMakeFiles/AIzo_p1.dir/Util/CLI.cpp.obj: CXX_COMPILER__AIzo_p1_unscanned_D
   OBJECT_DIR = CMakeFiles\AIzo_p1.dir
   OBJECT_FILE_DIR = CMakeFiles\AIzo_p1.dir\Util
 
+build CMakeFiles/AIzo_p1.dir/Util/File/ResultSaver.cpp.obj: CXX_COMPILER__AIzo_p1_unscanned_Debug C$:/Users/Admin/CLionProjects/AIzo_p1/Util/File/ResultSaver.cpp || cmake_object_order_depends_target_AIzo_p1
+  DEP_FILE = CMakeFiles\AIzo_p1.dir\Util\File\ResultSaver.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\AIzo_p1.dir
+  OBJECT_FILE_DIR = CMakeFiles\AIzo_p1.dir\Util\File
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target AIzo_p1
@@ -81,7 +87,7 @@ build CMakeFiles/AIzo_p1.dir/Util/CLI.cpp.obj: CXX_COMPILER__AIzo_p1_unscanned_D
 #############################################
 # Link the executable AIzo_p1.exe
 
-build AIzo_p1.exe: CXX_EXECUTABLE_LINKER__AIzo_p1_Debug CMakeFiles/AIzo_p1.dir/main.cpp.obj CMakeFiles/AIzo_p1.dir/Util/File/FileUtill.cpp.obj CMakeFiles/AIzo_p1.dir/test/TestCLI.cpp.obj CMakeFiles/AIzo_p1.dir/Util/CLI.cpp.obj
+build AIzo_p1.exe: CXX_EXECUTABLE_LINKER__AIzo_p1_Debug CMakeFiles/AIzo_p1.dir/main.cpp.obj CMakeFiles/AIzo_p1.dir/Util/File/FileUtill.cpp.obj CMakeFiles/AIzo_p1.dir/test/TestCLI.cpp.obj CMakeFiles/AIzo_p1.dir/Util/CLI.cpp.obj CMakeFiles/AIzo_p1.dir/Util/File/ResultSaver.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\AIzo_p1.dir

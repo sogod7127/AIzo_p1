@@ -142,6 +142,11 @@ const T& AizoArray<T>::operator[](size_t index) const {
     return aizoArray[index];
 }
 
+template<typename T>
+bool AizoArray<T>::empty() {
+    return aizoArraySize == 0;
+}
+
 template <typename T>
 void AizoArray<T>::quickSort(char type) {
 

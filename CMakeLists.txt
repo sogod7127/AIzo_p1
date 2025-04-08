@@ -20,6 +20,7 @@ add_executable(AIzo_p1 main.cpp
         Util/AizoArrayBase.h
         test/TestCLI.cpp
         Util/CLI.cpp
+        Util/File/ResultSaver.cpp
 )
 
 # Test executable

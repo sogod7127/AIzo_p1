@@ -41,14 +41,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "AIzo_p1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-AIzo_p1-Debug-d78de39204a95d1e33e0.json",
+					"jsonFile" : "target-AIzo_p1-Debug-b2f4eac1c3c70009da74.json",
 					"name" : "AIzo_p1",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "AIzo_tests::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-AIzo_tests-Debug-e1488b85faf58357cc44.json",
+					"jsonFile" : "target-AIzo_tests-Debug-5b2c1211d6c165b58b23.json",
 					"name" : "AIzo_tests",
 					"projectIndex" : 0
 				}

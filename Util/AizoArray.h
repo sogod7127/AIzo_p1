@@ -22,6 +22,14 @@ public:
     AizoArray(T (&arr)[N]);
     AizoArray(int dummy);
 
+    void clear() override {
+        delete[] aizoArray;
+        delete[] primaryAizo;
+        aizoArray = nullptr;
+        primaryAizo = nullptr;
+        aizoArraySize = 0;
+        reservedSize = 0;
+    }
     ~AizoArray()override {
         delete[] aizoArray;
     }
@@ -43,6 +51,8 @@ public:
     T& operator[](size_t index);
 
     const T& operator[](size_t index) const;
+
+    bool empty();
 };
 
 

@@ -66,12 +66,70 @@ void createMixedFile(const std::string& filename) {
     file.close();
 }
 
+void createAscendingFile(const std::string& filename) {
+    std::ofstream file(filename);
+    if (!file.is_open()) {
+        throw std::runtime_error("Could not open file");
+    }
+
+    file << NUM_ELEMENTS;
+
+    for (int i = 0; i < NUM_ELEMENTS; ++i) {
+        file << std::endl;
+        file << i;
+    }
+
+    file.close();
+}
+
+void createDescendingFile(const std::string& filename) {
+    std::ofstream file(filename);
+    if (!file.is_open()) {
+        throw std::runtime_error("Could not open file");
+    }
+
+    file << NUM_ELEMENTS;
+
+    for (int i = NUM_ELEMENTS; i > 0; --i) {
+        file << std::endl;
+        file << i;
+    }
+
+    file.close();
+}
+
+void createPartiallySortedFile(const std::string& filename, double sortedPercentage) {
+    std::ofstream file(filename);
+    if (!file.is_open()) {
+        throw std::runtime_error("Could not open file");
+    }
+
+    file << NUM_ELEMENTS;
+
+    int sortedElements = static_cast<int>(NUM_ELEMENTS * sortedPercentage);
+    for (int i = 0; i < sortedElements; ++i) {
+        file << std::endl;
+        file << i;
+    }
+
+    for (int i = sortedElements; i < NUM_ELEMENTS; ++i) {
+        file << std::endl;
+        file << std::rand() % 1000000;
+    }
+
+    file.close();
+}
+
 int main() {
     std::filesystem::create_directory("TestNumbers");
 
     createIntFile("TestNumbers/int_data.txt");
     createFloatFile("TestNumbers/float_data.txt");
     createMixedFile("TestNumbers/mixed_data.txt");
+    createAscendingFile("TestNumbers/ascending_data.txt");
+    createDescendingFile("TestNumbers/descending_data.txt");
+    createPartiallySortedFile("TestNumbers/partially_sorted_66_data.txt", 0.66);
+    createPartiallySortedFile("TestNumbers/partially_sorted_33_data.txt", 0.33);
 
     return 0;
 }

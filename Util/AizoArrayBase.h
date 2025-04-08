@@ -9,6 +9,7 @@ public:
     virtual void print() = 0;
     virtual void printPrimary() = 0;
     virtual void reshamble() = 0;
+    virtual void clear() = 0;
 
     virtual void reserve(size_t size) = 0;
     virtual bool isSorted() = 0;

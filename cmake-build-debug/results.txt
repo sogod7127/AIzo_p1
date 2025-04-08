@@ -1,7 +1,0 @@
-QS-L: 1.4282 ms
-QS_R: 2.6243 ms
-QS_M: 3.1237 ms
-QS_r: 3.8712 ms
-IS: 35.6433 ms
-HS: 1.6933 ms
-SS-H: 3.9655 ms
